@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Style scss -->
+    <link href="./stylehome.css" rel="stylesheet">
+
+    <!-- title -->
+    <title>MyBook</title>
+</head>
+<body>
+    <header id="home" class="home">
+      <nav class="navbar">
+        <div class="container d-flex flex-row">
+          <h4 class="navbar-brand">myBook</h4>
+
+          <div class="nav" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-row p-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#toRead">To Read</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#done">Done</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </header>
+      
+      <section class="hero-section">
+        <div class="container hero-container">
+          <form class="form" id="form" action="#">
+            <h2 class="input-title">Input new book here</h2>
+
+            <input class="form-control input-book-title" id='bookTitle' type="text" placeholder="Judul" aria-label="Judul Buku" />
+            <input class="form-control input-book-writer" id='bookWriter' type="text" placeholder="Penulis" aria-label="Penulis Buku" />
+            <input class="form-control input-book-year" id='bookYear' type="number" placeholder="Tahun" aria-label="Tahun terbit buku" />
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Done</label>
+            </div>
+            <button type="submit" value="submit" class="button-submit" id="submitBook">Add book</button>
+          </form>
+
+          <div class="svg-icon">
+            <img src="img/undraw_book_lover_mkck 1.svg" class="svg-image"/>
+          </div>
+      </div>
+
+      <div class="svg-arrow">
+        <a href="#book-list">
+          <svg xmlns="http://www.w3.org/2000/svg" class="arrow" fill="none" viewBox="0 0 24 24" stroke="#003579">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+
+      <section class="book-list" id="book-list">
+        <div class="search-book-section container">
+          <h4 class="search-title">Search Book Here</h4>
+          <div class="search-input mb-3">
+            <input type="text" class="form-control search-bar" placeholder="The title of the book" id="search-bar">
+            <button class="btn search-button" type="button" id="search-button">cari</button>
+          </div>
+      </div>
+
+        <div class="container d-flex flex-column">
+          <article class="book-toRead" id="toRead">
+            <h4 class="toRead-title">To Read</h4>
+            <div class="toRead-list" id="toReadList"></div>
+          </article>
+          <article class="book-done" id="done">
+            <h4 class="doneRead-title">Done</h4>
+            <div class="doneRead-list" id="doneList"></div>
+          </article>
+       </div>
+      </section>
+      </section>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="data.js"></script>
+      <script src="dom.js"></script>
+      <script src="index.js"></script>
+</body>
+</html>

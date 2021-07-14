@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body .home {
+  background-color: #fe697d;
+}
+
+body .home .navbar {
+  background: linear-gradient(135deg, #ea6477 0%, #ff6e83 100%);
+  -webkit-box-shadow: 10px 10px 25px 0px #cb5768e5, -10px -10px 20px 0px #ff7b92e5, 10px -10px 20px 0px #cb576833, -10px 10px 20px 0px #cb576833, -1px -1px 2px 0px #cb576880 inset, 1px 1px 2px 0px #ff7b924d inset;
+          box-shadow: 10px 10px 25px 0px #cb5768e5, -10px -10px 20px 0px #ff7b92e5, 10px -10px 20px 0px #cb576833, -10px 10px 20px 0px #cb576833, -1px -1px 2px 0px #cb576880 inset, 1px 1px 2px 0px #ff7b924d inset;
+}
+
+body .home .navbar .navbar-brand {
+  color: white;
+  font: 600 1.5rem/2.25rem "Poppins", sans-serif;
+}
+
+body .home .navbar .nav-item {
+  padding: 0 1rem;
+}
+
+body .home .navbar .nav-item .nav-link {
+  color: white;
+  font: 400 "Poppins", sans-serif;
+}
+
+body .home .navbar .nav-item .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+body .home .navbar .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+body .home .navbar .nav-item .active {
+  font: 500 "Poppins", sans-serif;
+}
+
+body .home .navbar .nav-item .active::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+body .hero-section {
+  background-color: #fe697d;
+  padding: 2rem 0;
+}
+
+body .hero-section .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .hero-section .hero-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .hero-section .hero-container .form .input-title {
+  margin: 1rem 0;
+  color: #003579;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+body .hero-section .hero-container .form .input-book-title,
+body .hero-section .hero-container .form .input-book-writer,
+body .hero-section .hero-container .form .input-book-year {
+  border-radius: 10rem;
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 3px 3px 8px 0px #626262e5 inset, -3px -3px 6px 0px #ffffffe5 inset, 3px -3px 6px 0px #62626233 inset, -3px 3px 6px 0px #62626233 inset, -1px -1px 2px 0px #62626280, 1px 1px 2px 0px #ffffff4d;
+          box-shadow: 3px 3px 8px 0px #626262e5 inset, -3px -3px 6px 0px #ffffffe5 inset, 3px -3px 6px 0px #62626233 inset, -3px 3px 6px 0px #62626233 inset, -1px -1px 2px 0px #62626280, 1px 1px 2px 0px #ffffff4d;
+}
+
+body .hero-section .hero-container .form .form-check {
+  margin: 1rem auto;
+}
+
+body .hero-section .hero-container .form .form-check .form-check-label {
+  color: #003579;
+  font: 600 1rem/1.5rem "Montserrat", sans-serif;
+}
+
+body .hero-section .hero-container .form .button-submit {
+  border-radius: 10rem;
+  color: #003579;
+  font: 600 1rem/1.5rem "Montserrat", sans-serif;
+  padding: 0.5rem;
+  border: none;
+  width: 10rem;
+  margin: 0 auto 2rem auto;
+  -webkit-box-shadow: 3px 3px 8px 0px #737373e5, -3px -3px 6px 0px #ffffffe5, 3px -3px 6px 0px #73737333, -3px 3px 6px 0px #73737333, 1px -1px 2px 0px #73737380 inset, 1px 1px 2px 0px #ffffff4d inset;
+          box-shadow: 3px 3px 8px 0px #737373e5, -3px -3px 6px 0px #ffffffe5, 3px -3px 6px 0px #73737333, -3px 3px 6px 0px #73737333, 1px -1px 2px 0px #73737380 inset, 1px 1px 2px 0px #ffffff4d inset;
+}
+
+@media only screen and (min-width: 992px) {
+  body .hero-section .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body .hero-section .hero-container .svg-image {
+  width: 30rem;
+}
+
+body .svg-arrow {
+  width: 2rem;
+  height: 2rem;
+  margin: 3rem auto;
+  -webkit-animation: arrowDownUp 1s linear infinite;
+          animation: arrowDownUp 1s linear infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes arrowDownUp {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes arrowDownUp {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+body .book-list .search-book-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.5rem;
+  margin: auto;
+}
+
+body .book-list .search-book-section .search-title {
+  text-align: center;
+  font: 600 1.25rem/1.75rem "Montserrat", sans-serif;
+  color: #003579;
+}
+
+body .book-list .search-book-section .search-input {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.1fr;
+      grid-template-columns: 1fr 0.1fr;
+  width: 80%;
+}
+
+body .book-list .search-book-section .search-input .search-bar {
+  border: none;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding: 0 1rem;
+}
+
+body .book-list .search-book-section .search-input .search-button {
+  background-color: white;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-weight: 600;
+  border-left: 1px solid #bbb7b7;
+}
+
+body .book-list .search-book-section .search-input .search-button:hover {
+  background-color: #003579;
+  color: white;
+}
+
+body .book-list .book-toRead,
+body .book-list .book-done {
+  background-color: white;
+  -webkit-box-shadow: 11px 11px 28px 0px #9c9c9ce5 inset, -11px -11px 22px 0px #ffffffe5 inset, 11px -11px 22px 0px #9c9c9c33 inset, -11px 11px 22px 0px #9c9c9c33 inset, -1px -1px 2px 0px #9c9c9c80, 1px 1px 2px 0px #ffffff4d;
+          box-shadow: 11px 11px 28px 0px #9c9c9ce5 inset, -11px -11px 22px 0px #ffffffe5 inset, 11px -11px 22px 0px #9c9c9c33 inset, -11px 11px 22px 0px #9c9c9c33 inset, -1px -1px 2px 0px #9c9c9c80, 1px 1px 2px 0px #ffffff4d;
+  min-height: 10rem;
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+  margin: 2rem 0;
+}
+
+body .book-list .book-toRead .toRead-title,
+body .book-list .book-toRead .doneRead-title,
+body .book-list .book-done .toRead-title,
+body .book-list .book-done .doneRead-title {
+  color: #003579;
+  font: 600 1.25rem/1.75rem "Poppins", sans-serif;
+}
+
+body .book-list .book-toRead .toRead-list,
+body .book-list .book-toRead .doneRead-list,
+body .book-list .book-done .toRead-list,
+body .book-list .book-done .doneRead-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: stretch;
+  gap: 1rem;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper,
+body .book-list .book-done .toRead-list .bookItemWrapper,
+body .book-list .book-done .doneRead-list .bookItemWrapper {
+  border: 1px solid #b4b2b2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .bookDetail,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .bookDetail,
+body .book-list .book-done .toRead-list .bookItemWrapper .bookDetail,
+body .book-list .book-done .doneRead-list .bookItemWrapper .bookDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .bookDetail .book-item-title,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .bookDetail .book-item-title,
+body .book-list .book-done .toRead-list .bookItemWrapper .bookDetail .book-item-title,
+body .book-list .book-done .doneRead-list .bookItemWrapper .bookDetail .book-item-title {
+  color: #003579;
+  font: 600 1.25rem/1.75rem "Poppins", sans-serif;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .bookDetail .book-item-writer,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .bookDetail .book-item-writer,
+body .book-list .book-done .toRead-list .bookItemWrapper .bookDetail .book-item-writer,
+body .book-list .book-done .doneRead-list .bookItemWrapper .bookDetail .book-item-writer {
+  font: 0.875rem/1.25rem "Montserrat", sans-serif;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .bookDetail .book-item-year,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .bookDetail .book-item-year,
+body .book-list .book-done .toRead-list .bookItemWrapper .bookDetail .book-item-year,
+body .book-list .book-done .doneRead-list .bookItemWrapper .bookDetail .book-item-year {
+  font: italic bold 0.875rem/1.25rem "Montserrat", sans-serif;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .done-button,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .done-button,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .done-button,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .done-button {
+  background: url("./img/check-mark.svg");
+  background-size: contain;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .done-button:hover,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .done-button:hover,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .done-button:hover,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .done-button:hover {
+  background: url("img/checked.svg");
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) all;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .trash-button,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .trash-button,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .trash-button,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .trash-button {
+  background: url("./img/trash.svg");
+  background-size: contain;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .trash-button:hover,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .trash-button:hover,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .trash-button:hover,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .trash-button:hover {
+  background: url("./img/trash-fill.svg");
+  background-size: contain;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) all;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .undo-button,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .undo-button,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .undo-button,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .undo-button {
+  background: url("./img/undo.svg");
+  background-size: contain;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+body .book-list .book-toRead .toRead-list .bookItemWrapper .iconWrapper .undo-button:hover,
+body .book-list .book-toRead .doneRead-list .bookItemWrapper .iconWrapper .undo-button:hover,
+body .book-list .book-done .toRead-list .bookItemWrapper .iconWrapper .undo-button:hover,
+body .book-list .book-done .doneRead-list .bookItemWrapper .iconWrapper .undo-button:hover {
+  -webkit-animation: rotation 1500ms ease-in-out 2;
+          animation: rotation 1500ms ease-in-out 2;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.alert-container {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  background-color: #003579;
+  margin: 0.5rem auto;
+  max-width: 40vw;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.alert-container .alert-text {
+  color: white;
+  text-align: center;
+  margin: 0 0.25rem;
+}
+/*# sourceMappingURL=stylehome.css.map */
